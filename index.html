@@ -13,20 +13,38 @@
   </head>
   <body>
     <div
-      class="container bg-body-background mx-auto max-w-full min-h-screen text-black"
+      class="container bg-body-background mx-auto max-w-full min-h-full text-black"
     >
-      <nav class="navigation pl-10 pr-10 bg-transparent flex">
-        <img class="logo" src="./assets//chugioyoo.svg" alt="logo" />
-        <div class="hamburger-box nav-icons">
+      <nav class="navigation bg-transparent flex">
+        <img
+          class="w-16 md:w-32 lg:w-48"
+          src="./assets//chugioyoo.svg"
+          alt="logo"
+        />
+        <div class="hamburger-box nav-icons w-8">
           <span class="line line-1"></span>
           <span class="line line-2"></span>
         </div>
         <img
-          class="text-black star-image nav-icons"
+          class="text-black w-8 md:w-8 lg:w-8 star-image nav-icons"
           src="https://chungiyoo.com/img/nav-decoration.svg"
           alt="img"
         />
       </nav>
+
+      <div></div>
+
+      <div class="relative flex justify-center items-center h-screen w-screen">
+        <div
+          class="big-cirlce bg-white rounded-tl-full rounded-tr-full "
+        >
+          <img
+            class="img-text w-8/12  m-auto"
+            src="https://chungiyoo.com/img/contact-title.svg"
+            alt="open-to-work-image"
+          />
+        </div>
+      </div>
     </div>
   </body>
   <script src="index.js"></script>

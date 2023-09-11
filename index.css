@@ -13,6 +13,11 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  padding: 2%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index:10;
 }
 
 .logo {
@@ -22,6 +27,7 @@
 .nav-icons {
   width: 30px;
   filter: brightness(0);
+  margin-right: 5%;
 }
 .star-image {
   transition: transform 2s ease;
@@ -42,7 +48,6 @@
 
 .hamburger-box {
   width: 50px;
-  margin-top: 20px;
   display: inline-block;
   cursor: pointer;
 }
@@ -62,4 +67,17 @@
 
 .hamburger-box:hover .line-2 {
   transform: rotate(70deg);
+}
+
+.big-cirlce {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 200px;
+}
+
+.img-text {
+    position: relative;
+    z-index: 1;
+    top: 20px;
 }
