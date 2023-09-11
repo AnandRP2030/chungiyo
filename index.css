@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navigation {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-icons {
+  width: 30px;
+  filter: brightness(0);
+}
+.star-image {
+  transition: transform 2s ease;
+  cursor: pointer;
+}
+
+.star-image:hover {
+  transform: rotate(360deg);
+}
+
+.line {
+  height: 3px;
+  font-weight: 1200;
+  border: 1px solid none;
+  width: 100px;
+  transform: translateZ(0) rotate(-180deg);
+}
+
+.hamburger-box {
+  width: 50px;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 50px;
+  background-color: #333;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-box:hover .line-1 {
+  transform: rotate(70deg);
+}
+
+.hamburger-box:hover .line-2 {
+  transform: rotate(70deg);
+}
