@@ -816,6 +816,10 @@ video {
   width: 66.666667%;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-screen {
   width: 100vw;
 }
@@ -1949,6 +1953,11 @@ video {
   vertical-align: super;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2365,7 +2374,7 @@ video {
   padding: 2%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
 }
 
 .logo {
@@ -2431,7 +2440,7 @@ video {
   top: 108px;
 }
 
-.girl-img, .message {
+.girl-img {
   position: absolute;
   z-index: 2;
   top: 200px;
@@ -2439,17 +2448,25 @@ video {
   transform: translateX(-50%);
 }
 
-.message {
-  top: 700px;
+.caption {
+  z-index: 30;
+  position: relative;
+  top: 150px;
+  width:400px;
+  margin: auto;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mail-box{
+  background-color: red;
+  height: 300px;
+  z-index: 40;
 }
 
 @media screen and (max-width:768px) {
   .girl-img{
     top: 142px;
-  }
-
-  .message {
-    top: 400px;
   }
 }
 
@@ -2549,4 +2566,4 @@ video {
       paint-order: markers;
     }
   }
-}
+} 
