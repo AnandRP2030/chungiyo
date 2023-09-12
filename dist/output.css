@@ -795,32 +795,29 @@ video {
   height: 100vh;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
-.w-screen {
-  width: 100vw;
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 
 .w-16 {
   width: 4rem;
 }
 
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .w-8 {
   width: 2rem;
 }
 
-.w-auto {
-  width: auto;
+.w-8\/12 {
+  width: 66.666667%;
 }
 
-.w-11 {
-  width: 2.75rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-full {
@@ -2355,6 +2352,10 @@ video {
   margin: 0;
 }
 
+.container {
+  height: 1000px;
+}
+
 .navigation {
   height: 100px;
   width: 100%;
@@ -2364,7 +2365,7 @@ video {
   padding: 2%;
   position: sticky;
   top: 0;
-  z-index:1;
+  z-index: 10;
 }
 
 .logo {
@@ -2374,6 +2375,7 @@ video {
 .nav-icons {
   width: 30px;
   filter: brightness(0);
+  margin-right: 5%;
 }
 
 .star-image {
@@ -2418,9 +2420,43 @@ video {
 
 .big-cirlce {
   width: 100%;
-  height: 800px;
+  height: 1000px;
   position: relative;
+  top: 300px;
+}
+
+.img-text {
+  position: relative;
+  z-index: 1;
+  top: 108px;
+}
+
+.girl-img, .message {
+  position: absolute;
+  z-index: 2;
   top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.message {
+  top: 700px;
+}
+
+@media screen and (max-width:768px) {
+  .girl-img{
+    top: 142px;
+  }
+
+  .message {
+    top: 400px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .girl-img{
+    top: 135px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -2492,14 +2528,6 @@ video {
     width: 8rem;
   }
 
-  .md\:w-16 {
-    width: 4rem;
-  }
-
-  .md\:w-7 {
-    width: 1.75rem;
-  }
-
   .md\:w-8 {
     width: 2rem;
   }
@@ -2508,10 +2536,6 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-48 {
     width: 12rem;
-  }
-
-  .lg\:w-16 {
-    width: 4rem;
   }
 
   .lg\:w-8 {
@@ -2526,4 +2550,3 @@ video {
     }
   }
 }
-
