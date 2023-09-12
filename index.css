@@ -77,11 +77,28 @@
   position: relative;
   top: 300px;
 }
+.smily-div {
+  z-index: 40;
+  height: 100px;
+  width: 80px;
+  position: relative;
+  animation: moveLeftAndRight 4s linear infinite alternate;
+}
+
+
+@keyframes moveLeftAndRight {
+  0% {
+    transform: rotate(-40deg);
+  }
+  100% {
+    transform: rotate(40deg);
+  }
+}
 
 .img-text {
   position: relative;
   z-index: 1;
-  top: 108px;
+  top: 5px;
 }
 .girl-img {
   position: absolute;
@@ -91,32 +108,56 @@
   transform: translateX(-50%);
 }
 
-
 .caption {
   z-index: 30;
   position: relative;
-  top: 150px;
-  width:400px;
+  top: 100px;
+  width: 100%;
   margin: auto;
+  
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
-.mail-box{
-  background-color: red;
-  height: 300px;
-  z-index: 40;
+.mail-box {
+  height: 800px;
+  z-index: 30;
+  position: relative;
+  top: 450px;
 }
-@media screen and (max-width:768px) {
-  .girl-img{
+
+.like-mail {
+  font-family: Voyage-Regular;
+  font-size: 12vw;
+}
+
+.text-box {
+  width: 50vw;
+  cursor: pointer;
+}
+
+.mail-text {
+  font-size: 2.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .girl-img {
     top: 142px;
   }
- 
+  .mail-box {
+    top: 120px;
+  }
+  .text-box {
+    width: 67vw;
+    height: 30px;
+  }
 }
 
 @media screen and (max-width: 640px) {
-  .girl-img{
+  .girl-img {
     top: 135px;
   }
-  
-} 
+  .mail-box {
+    top: 50px;
+  }
+}
